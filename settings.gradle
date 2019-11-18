@@ -1,0 +1,11 @@
+pluginManagement {
+    repositories {
+        maven {
+            url './repo'
+        }
+
+        gradlePluginPortal()
+    }
+}
+
+rootProject.name = 'testcoveragereporter'
