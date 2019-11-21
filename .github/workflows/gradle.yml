@@ -14,7 +14,7 @@ jobs:
         java-version: 1.8
       
     - name: Build Plugin & Upload the Local Archive
-      run: gradlew uploadArchives
+      run: ./gradlew uploadArchives
     
-    - name: Build Plugin & Upload the Local Archive
-      run: gradlew --build-file ./demo/build.gradle extractTestReport
+    - name: Run Plugin Task
+      run: ./gradlew --build-file ./demo/build.gradle extractTestReport
