@@ -36,6 +36,9 @@ repositories {
 }
 
 dependencies {
+    // Dom4J
+    implementation 'org.dom4j:dom4j:2.1.1'
+
     // Gradle
     implementation gradleApi()
 
