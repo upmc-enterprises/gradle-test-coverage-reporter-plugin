@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE report PUBLIC "-//JACOCO//DTD Report 1.1//EN" "report.dtd">
+<report name="lib-1">
+    <counter type="INSTRUCTION" missed="312" covered="2070"/>
+    <counter type="LINE" missed="21" covered="523"/>
+    <counter type="COMPLEXITY" missed="3" covered="46"/>
+    <counter type="METHOD" missed="1" covered="22"/>
+    <counter type="CLASS" missed="1" covered="15"/>
+</report>

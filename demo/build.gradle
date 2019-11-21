@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        maven {
+            url uri("../repo")
+        }
+    }
+
+    dependencies {
+        classpath "com.oliverspryn.gradle:testcoveragereporter:1.0.0"
+    }
+}
+
+plugins {
+    id "org.jetbrains.kotlin.jvm" version "1.3.50"
+}
+
+apply plugin: "com.oliverspryn.gradle.testcoveragereporter"
+
+testCoverageReporter {
+    coverageTypes "class", "complexity", "instruction", "line", "method"
+    enabled true
+
+    modules {
+        module("App", "app-report.xml")
+        module("Library 1", "lib-1-report.xml")
+        module("Library 2", "lib-2-report.xml")
+    }
+}
