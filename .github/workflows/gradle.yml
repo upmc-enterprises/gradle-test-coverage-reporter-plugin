@@ -14,7 +14,7 @@ jobs:
       with:
         java-version: 1.8
       
-    - name: Build Plugin & Upload the Local Archive
+    - name: Build Plugin & Upload to the Local Archive
       run: ./gradlew uploadArchives
     
     - name: Run Plugin Task
