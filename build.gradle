@@ -1,4 +1,5 @@
 plugins {
+    id 'com.gradle.plugin-publish' version '0.10.1'
     id 'java-gradle-plugin'
     id 'maven'
     id 'org.jetbrains.kotlin.jvm' version '1.3.50'
@@ -44,4 +45,17 @@ dependencies {
 
     // Kotlin
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.50'
+}
+
+pluginBundle {
+    description = "Extracts unit test coverage metrics from a JaCoCo report and displays a summary in the build output"
+    website = "https://github.com/upmc-enterprises/gradle-test-coverage-reporter-plugin"
+    vcsUrl = "https://github.com/upmc-enterprises/gradle-test-coverage-reporter-plugin"
+    tags = ["artifacts", "build", "build artifacts", "cd", "ci", "files", "jacoco", "jacoco-report", "kotlin"]
+
+    plugins {
+        testCoverageReporter {
+            displayName = "Test Coverage Reporter"
+        }
+    }
 }
