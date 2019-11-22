@@ -21,8 +21,8 @@ testCoverageReporter {
     enabled true
 
     modules {
-        module("App", "app-report.xml")
-        module("Library 1", "lib-1-report.xml")
-        module("Library 2", "lib-2-report.xml")
+        module("App", "./demo/app-report.xml")
+        module("Library 1", "./demo/lib-1-report.xml")
+        module("Library 2", "./demo/lib-2-report.xml")
     }
 }
